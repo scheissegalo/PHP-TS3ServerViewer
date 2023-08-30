@@ -3,7 +3,7 @@ name: Publish on push
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build_and_create_release:
