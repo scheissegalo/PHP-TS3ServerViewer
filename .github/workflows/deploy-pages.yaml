@@ -1,0 +1,28 @@
+name: Generate Static HTML from PHP
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if it's not 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'  # You can specify the PHP version you need
+
+    - name: Generate Static HTML
+      run: php index.php > index.html  # Replace 'your_php_file.php' with your actual PHP file name
+      
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: ./  # The directory where your static_page.html file is located
