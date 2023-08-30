@@ -1,7 +1,7 @@
 TeamSpeak 3 Server Viewer (TS3SSV)
 =====
 TeamSpeak 3 Server Viewer is a simple status dashboard powered by PHP.
-Originally a fork of TSStatus (tsstatus.sebastien.me).
+Originally a fork of https://github.com/LeoWinterDE/TS3ServerStatusViewer
 
 ![screenshot of TS3ServerStatusViewer](https://i.imgur.com/x6529AN.jpg)
 
@@ -98,45 +98,4 @@ Originally a fork of TSStatus (tsstatus.sebastien.me).
 		- default channel
 		- passworded channel
 		- moderated channel
-```
-
-## Changelog
-2015-03-01
-```
-	- start by creating a fork of TSStatus (tsstatus.sebastien.me) - new version nummber (v1)
-	- optimization and adaptation
-	- add index.php
-	- MIT License
-```
-2013-08-31
-```
-	- select server by udp port or server id
-	- better special characters support
-	- users are now sorted by talk power
-	- channels ids are now used for connect links, this prevent bugs with special characters
-	- bug fixes when multiple servers are diplayed on one page
-	- some visual improvements
-	- removed decodeUTF8
-	- new features, hideEmptyChannels and hideParentChannels
-```
-2010-02-26:
-```
-	- work with BETA 18 servers
-	- added showPasswordBox, setLoginPassword, setCache and limitToChannels methods. See "Advanced usage" section for more informations. All these new features are implemented in the generator.
-	- as suggested by COOLover on the official Teamspeak forum, TSStatus now send servergrouplist and channelgrouplist commands and call setServerGroupFlag and setChannelGroupFlag according to the received datas.
-```
-2009-12-26
-```
-	- tested with severs BETA 3,5,6,7,8
-	- first release of the TSStatus generator script
-	- added a new property, showNicknameBox, to show/hide the nickname box
-	- improved error messages. sockets and Teamspeak servers errors are now displayed with the error message and error number
-	- added a timeout property for connect, read, write operations
-	- properly disconnect from server and send the quit message
-	- code cleanup
-```
-2009-12-23
-```
-	- work with BETA 5 servers
-	- added a decodeUTF8 method for specials chars
 ```
