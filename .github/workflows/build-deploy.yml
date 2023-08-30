@@ -9,7 +9,7 @@ jobs:
   build_and_create_release:
     runs-on: ubuntu-latest
     env:
-      TAG_NAME: v1.0.2
+      TAG_NAME: v1.0.3
     steps:
       - name: Zip source code
         run: |
