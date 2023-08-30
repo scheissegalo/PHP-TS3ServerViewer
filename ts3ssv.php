@@ -169,7 +169,7 @@ class ts3ssv
 			$response .= $this->sendCommand($this->_useCommand);
 			$response .= $this->sendCommand("serverinfo");
 			$response .= $this->sendCommand("channellist -topic -flags -voice -limits");
-			$response .= $this->sendCommand("clientlist -uid -away -voice -groups");
+			$response .= $this->sendCommand("clientlist -uid -away -voice -groups -country");
 			$response .= $this->sendCommand("servergrouplist");
 			$response .= $this->sendCommand("channelgrouplist");
 
@@ -313,7 +313,12 @@ class ts3ssv
 							$flags[] = $this->_serverGroupFlags[$serverGroup];
 						}
 					}
-					$flags = $this->renderFlags($flags);
+
+					if ($user["client_country"]){
+						$flags = $this->renderFlags($flags).'<img src="https://north-industries.com/img/countries/'.substr(strtolower($user["client_country"]), 0, 2).'.png" />';
+					}else{
+						$flags = $this->renderFlags($flags);
+					}
 
 					$content .= <<<HTML
 <div class="ts3ssvItem">
