@@ -54,7 +54,7 @@ $phpCode .= 'echo $ts3ssv->render();' . "\n?>";
 ?>
 <html>
 <head>
-<title>START SETUP - <a href="https://github.com/LeoWinterDE/TS3SSV">TeamSpeak Server Status Viewer</a></title>
+<title>START SETUP - <a href="https://github.com/scheissegalo/PHP-TS3ServerViewer">TeamSpeak Server Viewer</a></title>
 <style type="text/css">
 body, table{
 	font-family: Verdana;
@@ -80,7 +80,7 @@ h3{
 </style>
 </head>
 <body>
-<h3>START SETUP - TeamSpeak Server Status Viewer</h3>
+<h3>START SETUP - TeamSpeak Server Viewer</h3>
 
 <?php
 if($enableGenerator)

@@ -1,5 +1,5 @@
 <?php
-/** https://github.com/LeoWinterDE/TS3ServerStatusViewer **/
+/** https://github.com/scheissegalo/PHP-TS3ServerViewer **/
 
 class ts3ssv
 {

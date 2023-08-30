@@ -1,7 +1,7 @@
 <html>
 <head>
-<!-- https://github.com/LeoWinterDE/TS3SSV -->
-<title>TeamSpeak Server Status Viewer</title>
+<!-- https://github.com/scheissegalo/PHP-TS3ServerViewer -->
+<title>TeamSpeak Server Viewer</title>
 <link rel="stylesheet" type="text/css" href="/ts3ssv.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script type="text/javascript" src="/ts3ssv.js"></script>
@@ -9,7 +9,7 @@
 <body>
 <?php
 require_once("ts3ssv.php");
-$ts3ssv = new ts3ssv("s1.ts.5g5.net", 10011);
+$ts3ssv = new ts3ssv("north-industries.com", 10011);
 $ts3ssv->useServerPort(9987);
 $ts3ssv->imagePath = "/img/default/";
 $ts3ssv->timeout = 2;

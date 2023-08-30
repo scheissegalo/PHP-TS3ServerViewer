@@ -1,4 +1,4 @@
-/* https://github.com/LeoWinterDE/TS3ServerStatusViewer */
+/* https://github.com/scheissegalo/PHP-TS3ServerViewer */
 
 .ts3ssv, .ts3ssverror{
 	background-color: #ffffff;
@@ -6,7 +6,7 @@
 }
 
 .ts3ssv, .ts3ssv *, .ts3ssverror{
-	color: #00000;
+	color: #000000;
 	font-family: Verdana;
 	font-size: 10px;
 }

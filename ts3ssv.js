@@ -1,4 +1,4 @@
-// https://github.com/LeoWinterDE/TS3ServerStatusViewer
+// https://github.com/scheissegalo/PHP-TS3ServerViewer
 
 function ts3ssvconnect(id, channel)
 {
